@@ -1,0 +1,99 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plank Knowledge</title>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="icon" href="{% static 'images/Monk-logo.png' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <style>
+        /* Add any custom styles here */
+        .row {
+            display: flex;
+        }
+
+        .video-container,
+        .text-container {
+            flex: 1;
+            margin: 75px;
+        }
+
+        .text-container p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="{% url 'blog' %}" class="anch">
+            <img class="logo" src="{% static 'images/anh6.png' %}" alt="Monk-logo"></a>
+        <div class="watermark1">
+            <a href="{% url 'blog' %}" class="anch">
+                <img src="{% static 'images/watermark/watermark (6).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (7).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (8).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (5).png' %}" class="watermark2" alt="">
+                <img src="{% static 'images/watermark/watermark (9).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (10).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (11).png' %}" class="watermark" alt="">
+            </a>
+        </div>
+
+        <div class="nav">
+            <a class="nav-link" href="{% url 'levelselection' %}">Trang chủ</a>
+            <a class="nav-link" href="{% url 'profile' %}">Hồ sơ</a>
+            <a class="nav-link" href="{% url 'signout' %}">Đăng xuất</a>
+        </div>
+    </nav>
+    <div class="container-fluid h-100">
+        <div class="row h-50">
+            <div class="col-12 p-0">
+                <h1 class="text-center mt-2">Hướng dẫn tư thế Plank</h1>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <div class="col-12 col-md-6 p-0 video-container ml-5">
+                <!-- Place your video in a styled container -->
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BQu26ABuVS0?start=3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-md-6 p-0 text-container mr-5">
+                <!-- Add the benefits and procedure of the asana here -->
+                <p>Tư thế plank là một bài tập cơ bụng rất hiệu quả để tăng sức mạnh và chịu lực cho các nhóm cơ vùng lưng, vai, cánh tay và chân. Để thực hiện tư thế plank, bạn có thể làm theo các bước sau:
+
+                    <br>1. Bắt đầu bằng việc đặt cánh tay trên sàn, sao cho các ngón tay hướng về phía trước và cách nhau khoảng vai.
+                    <br>2. Đặt chân song song và giữ cho cơ thể thẳng hàng từ đầu đến gót chân.
+                    <br>3. Nâng cơ thể lên khỏi sàn bằng cách giương người lên đôi bàn chân và đôi cánh tay. Lưu ý không được gập mông lên cao hoặc xõa mông xuống dưới, giữ cho cơ thể thẳng hàng trong suốt quá trình tập.
+                    <br>4. Giữ tư thế này trong khoảng thời gian 30 - 60 giây hoặc nhiều hơn nếu có thể.
+                    <br>5. Thở đều và sâu trong khi giữ tư thế.
+                    <br>Lưu ý: Nếu bạn mới bắt đầu tập thể dục, bạn có thể bắt đầu bằng tư thế plank trên đầu gối, sau đó dần dần tăng dần độ khó khi cơ thể được làm quen với bài tập này.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="{% url 'result' %}" class="btn btn-primary btn-lg mx-auto">Bắt đầu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warrior2 Knowledge</title>
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="icon" href="{% static 'images/Monk-logo.png' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+  
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <style>
+        /* Add any custom styles here */
+        .row {
+            display: flex;
+        }
+
+        .video-container,
+        .text-container {
+            flex: 1;
+            margin: 75px;
+        }
+
+        .text-container p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="{% url 'blog' %}" class="anch">
+            <img class="logo" src="{% static 'images/anh6.png' %}" alt="Monk-logo"></a>
+        <div class="watermark1">
+            <a href="{% url 'blog' %}" class="anch">
+                <img src="{% static 'images/watermark/watermark (6).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (7).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (8).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (5).png' %}" class="watermark2" alt="">
+                <img src="{% static 'images/watermark/watermark (9).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (10).png' %}" class="watermark" alt="">
+                <img src="{% static 'images/watermark/watermark (11).png' %}" class="watermark" alt="">
+            </a>
+        </div>
+
+        <div class="nav">
+            <a class="nav-link" href="{% url 'levelselection' %}">Trang chủ</a>
+            <a class="nav-link" href="{% url 'profile' %}">Hồ sơ</a>
+            <a class="nav-link" href="{% url 'signout' %}">Đăng xuất</a>
+        </div>
+    </nav>
+    <div class="container-fluid h-100">
+        <div class="row h-50">
+            <div class="col-12 p-0">
+                <h1 class="text-center mt-2">Hướng dẫn tư thế Warrior 2</h1>
+            </div>
+        </div>
+        <div class="row d-flex">
+            <div class="col-12 col-md-6 p-8 video-container ml-5">
+                <!-- Place your video in a styled container -->
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/pJhevMZfOHA?start=3"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-md-6 p-0 text-container mr-5">
+                <!-- Add the benefits and procedure of the asana here -->
+                <p>Tư thế Warrior 2 (hay còn gọi là Virabhadrasana II) là một tư thế yoga, được thực hiện để tăng cường sức mạnh, linh hoạt và cân bằng của cơ thể. Đây là một trong những tư thế quan trọng nhất trong các bài tập yoga vì nó giúp tăng cường cả sự tập trung và thở đều.
+
+                    <br>Để thực hiện tư thế này, bạn có thể làm theo các bước sau đây:
+                    
+                    <br>1. Bắt đầu đứng thẳng trên thảm yoga với hai chân chạm đất, hai tay treo xuống hai bên cơ thể.
+                    
+                    <br>2. Chuyển sang tư thế chân rộng với bàn chân phải hướng ra phía trước và bàn chân trái xoay về phía bên trong khoảng 45 độ.
+                    
+                    <br>3. Nâng tay phải lên đỉnh đầu và duỗi ra ngang vai, tay trái giữ nguyên ở vị trí ban đầu.
+                    
+                    <br>4. Hít thở sâu và khi thở ra, cúi người xuống phía trước để đặt tay phải xuống trên đùi phải, với lòng bàn tay hướng vào trong, ngón tay trỏ và ngón giữa hướng về phía trước.
+                    
+                    <br>5. Giữ cho đầu gối phải ở trên mũi chân, đồng thời giữ thăng bằng và tập trung vào sự thoải mái trong tư thế.
+                    
+                    <br>6. Giữ tư thế từ 30 giây đến 1 phút, sau đó thả xuống và lặp lại với bên kia.
+                    
+                    <br>Lưu ý: Nếu bạn có bất kỳ vấn đề về cột sống hoặc khớp gối, hãy tham khảo ý kiến ​​bác sĩ trước khi thực hiện tư thế này.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="{% url 'result' %}" class="btn btn-primary btn-lg mx-auto">Bắt đầu</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
